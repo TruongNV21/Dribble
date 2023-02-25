@@ -1,7 +1,7 @@
 
 
 .header{
-    /* background-color: #ccc; */
+    background-color: #fff;
     height: 80px;
     position: relative;
 }
@@ -132,6 +132,7 @@
 .navbar__item:hover .navbar__hover-menu{
     opacity: 1;
     visibility: visible;
+    z-index: 9999;
 }
 .navbar__dropdown-list{
     margin: 0;
@@ -319,12 +320,13 @@
 .header-mobile-menu{
     position: relative;
     width: 100%;
-    z-index: 999;
+    z-index: 9;
     overflow-y: scroll;
     height: calc(100vh - 80px);
     padding: 23px;
     opacity: 1;
     transition: visibility 0.2s linear, opacity 0.2s linear;
+    background-color: #fff;
 }
 
 .header-mobile-menu.hidden{
@@ -444,3 +446,86 @@
     display: block
 }
 
+
+/* ------------Hero--------- */
+
+.hero{
+    height: 560px;
+}
+
+.hero-wrap{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+    max-width: 100%;
+    overflow: hidden;
+    height: inherit;
+}
+
+.hero__categories{
+    margin-bottom: 20px;
+    width: 100%;
+    position: relative;
+
+}
+
+.hero__categories-list{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 12px;
+    list-style-type: none;
+   
+}
+
+
+.categories__link{
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: 16px 20px;
+    border-radius: 50px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.5);
+    margin: 0 10px;
+    transition: all .3s linear;
+}
+
+.categories__item:hover .categories__link{
+    color: #000;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.categories__item.current .categories__link{
+    background-color:#fff ;
+    color: #000;
+}
+
+
+.hero__media{
+    position: absolute;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    align-items: center;
+    justify-content: center;
+    filter: brightness(0.4);
+    opacity: 1;
+}
+
+
+.hero__media video{
+    width: 120vw;
+}

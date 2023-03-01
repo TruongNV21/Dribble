@@ -47,3 +47,19 @@ html{
     cursor: pointer;
     font-weight: 600;
 }
+
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+
+.grid__column-3{
+    width: calc(100% / 12 * 3);
+    padding: 0 16px;
+}
+
+.grid__column-12{
+    width: 100%;
+    padding: 0 16px;
+}

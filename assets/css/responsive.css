@@ -45,7 +45,7 @@
             width: 100%;
             position: relative;
             overflow: hidden;
-            height: 52px;
+            height: 48px;
         }
 
         .hero__categories-list{
@@ -69,14 +69,86 @@
 
         .categories__link{
             margin: 0 3px;
-            padding: 12px 16px;
+            padding: 8px 12px;
         }
 
+        .hero__media{
+            filter: brightness(0.6);
+        }
         .hero__media video{
             width: 400vw;
         }
 
+        .hero__text-content{
+            max-width: 500px;
+        }
+        
+        .hero__text-title{
+            margin: 0;
+            font-size: 2.4rem;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .hero__text-desc{
+            font-weight: 400;
+            font-size: 1.4srem;
+        }
+
+        .hero__search-input{
+            padding: 20px 46px;
+        }
+
+        /* ------------Product Filter---------- */
+        .grid__column-3.product__filter-form-item{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .product-container{
+            margin: 16px 20px;
+        }
+
     }
+@media all and (max-width: 739px){
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -4px;
+    }
+
+    .col{
+        padding: 0 4px
+    }
+
+    .c-1{
+        flex: 0 0 calc(100% / 12);
+        max-width: calc(100% / 12);
+    }
+    .c-12{
+        flex: 0 0 calc(100%);
+        max-width: calc(100%);
+    }
+}
+
+
+@media all and (min-width: 740px) and (max-width: 919px){
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -8px;
+    }
+
+    .col{
+        padding: 0 8px
+    }
+
+    .m-4{
+        flex: 0 0 calc(100% / 3);
+        max-width: calc(100% / 3);
+    }
+}
+
 
 @media only screen and (min-width: 920px){
         .navbar__list.desktop-only, .actions__item.desktop-only, .navbar__logo.desktop-only{
@@ -85,5 +157,19 @@
 
         .header-mobile-menu{
             display: none;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -18px;
+        }
+    
+        .col{
+            padding: 0 18px
+        }
+    
+        .l-3{
+            flex: 0 0 calc(100% / 4);
+            max-width: calc(100% / 4);
         }
     }

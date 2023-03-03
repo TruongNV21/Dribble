@@ -28,6 +28,10 @@ html{
     font-family: 'Open Sans', sans-serif;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .grid{
     width: 1200px;
     max-width: 100%;
@@ -56,6 +60,36 @@ html{
 
 .grid__column-3{
     width: calc(100% / 12 * 3);
+    padding: 0 16px;
+}
+
+.grid__column-4{
+    width: calc(100% / 12 * 4);
+    padding: 0 16px;
+}
+
+.grid__column-6{
+    width: calc(100% / 2);
+    padding: 0 16px; 
+}
+
+.grid__column-8{
+    width: calc(100% / 12 * 8);
+    padding: 0 16px;
+}
+
+.grid__column-9{
+    width: calc(100% / 12 * 9);
+    padding: 0 16px;
+}
+
+.grid__column-3p6{
+    width: calc(100% / 12 * 3.6);
+    padding: 0 16px;
+}
+
+.grid__column-1p8{
+    width: calc(100% / 12 * 1.8);
     padding: 0 16px;
 }
 
